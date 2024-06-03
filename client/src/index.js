@@ -1,10 +1,10 @@
-import React from "react"
-import ReactDOM from "react-dom"
-import App from "./App"
+import App from './App';
+import { render } from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
+const root = document.getElementById('root'); // <- This is the correct method call for React version 17
+render(
+
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-)
+,
+  root
+);
